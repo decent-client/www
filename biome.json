@@ -7,11 +7,13 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"ignore": []
+		"ignore": ["dist", "build"]
 	},
 	"formatter": {
 		"enabled": true,
-		"indentStyle": "tab"
+		"formatWithErrors": false,
+		"indentStyle": "space",
+		"lineWidth": 120
 	},
 	"organizeImports": {
 		"enabled": true
@@ -19,7 +21,39 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"suspicious": {
+				"recommended": true
+			},
+			"style": {
+				"recommended": true,
+				"noParameterAssign": "info"
+			},
+			"complexity": {
+				"recommended": true
+			},
+			"security": {
+				"recommended": true
+			},
+			"performance": {
+				"recommended": true
+			},
+			"correctness": {
+				"recommended": true,
+				"noUnusedImports": "warn"
+			},
+			"a11y": {
+				"recommended": true
+			},
+			"nursery": {
+				"useSortedClasses": {
+					"level": "info",
+					"fix": "safe",
+					"options": {
+						"functions": ["cn"]
+					}
+				}
+			}
 		}
 	},
 	"javascript": {

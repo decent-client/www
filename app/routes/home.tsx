@@ -1,3 +1,7 @@
 export default function Home() {
-	return;
+	return (
+		<main className="h-[200vh] pt-16">
+			<span />
+		</main>
+	);
 }
